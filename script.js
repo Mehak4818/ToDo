@@ -1,3 +1,5 @@
 document.getElementById("myButton").addEventListener("click", function () {
-  document.getElementById("output").innerText = "Button was clicked!";
-});
+  let task=document.getElementById("task-input").value ;
+  document.getElementById("task-list").innerText = task;
+localStorage.setItem("task", task);
+});   
